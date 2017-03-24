@@ -15,7 +15,7 @@ public class Runner {
 		StartUp s = new StartUp();
 
 		try {
-			s.fff();
+			s.readDocument();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
