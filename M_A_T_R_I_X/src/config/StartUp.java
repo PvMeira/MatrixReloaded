@@ -11,6 +11,7 @@ import java.io.IOException;
  *
  */
 public class StartUp {
+	private static final String CC = "file/";
 	private static final String PATH = "file01";
 	private static final String EXT = ".txt";
 	private int[][] matrixFinal;
@@ -23,7 +24,7 @@ public class StartUp {
 	 */
 	public void readDocument() throws FileNotFoundException, IOException {
 
-		try (BufferedReader br = new BufferedReader(new FileReader(PATH + EXT))) {
+		try (BufferedReader br = new BufferedReader(new FileReader(CC + PATH + EXT))) {
 			StringBuilder sb = new StringBuilder();
 			String line = br.readLine();
 
@@ -45,7 +46,6 @@ public class StartUp {
 	 */
 	private void populateTheMatrix(String line) {
 		char[] index = line.toCharArray();
-		System.out.println(index.toString());
 	}
 
 	/**
