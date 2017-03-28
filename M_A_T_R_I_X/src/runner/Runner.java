@@ -1,10 +1,10 @@
 package runner;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import config.StartUp;
 import errorControl.ErrorMessenger;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  * 
